@@ -3,6 +3,118 @@
     font-family: 'Raleway', sans-serif;
 }
 
+li {
+    display: inline;
+}
+
+#logo {
+    width: 60px;
+    height: 20px;
+    padding: 15px;
+}
+
+.menu {
+    color: var(--main-color);
+    display: inline-block;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.entete {
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.nav1 {
+    padding: 30px;
+}
+
+.nav2 {
+    padding: 30px;
+}
+
+.nav1:hover {
+    text-decoration: overline 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.nav2:hover {
+    text-decoration: overline 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+form {
+    margin: 10px;
+}
+
+input {
+    border-width: 0;
+    font-weight: bold;
+}
+
+.localisation {
+    padding: 15px;
+    border-width: 0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.ville {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 0;
+}
+
+.rechercher-desktop {
+    padding: 15px;
+    background-color: #0065FC;
+    border-width: 0;
+    border-radius: 0px 10px 10px 0px;
+}
+
+input[type="submit"] {
+    color: white;
+}
+
+.filtres {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.economique {
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.familial {
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.romantique {
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.pepites {
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -129,6 +241,10 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .rechercher-mobile {
+        display: none;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -163,5 +279,14 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .rechercher-desktop {
+        display: none;
+    }
+
     /* ... */
 }
+
+@media (min-width: 1024px) {
+    .rechercher-mobile {
+        display: none;
+    }
