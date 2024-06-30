@@ -4,7 +4,7 @@
 }
 
 li {
-    display: inline;
+    display: inline-block;
 }
 
 #logo {
@@ -36,7 +36,7 @@ li {
 }
 
 .nav1:hover {
-    text-decoration: overline 2px solid var(--main-color);
+    text-decoration: overline 2px solid ;
     color: var(--main-color);
 }
 
@@ -79,40 +79,24 @@ input[type="submit"] {
 }
 
 .filtres {
-    display: flex;
-    justify-content: flex-start;
-    margin: auto;
     background-color: white;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
+    border: 0;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px 10px 10px 0;
+    font-weight: bold;
 }
 
-.economique {
+.button-filter {
     margin: auto;
     background-color: white;
     padding: 10px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: bold;
+    border: 2px solid gainsboro;
 }
 
-.familial {
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.romantique {
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.pepites {
-    margin: auto;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
+.button-filter:hover {
+    background-color: lightsteelblue;
 }
 
 :root {
@@ -188,6 +172,46 @@ a {
     width: 65%;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -233,6 +257,40 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites {
+    width: 32%;
+}
+
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activites .card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+}
+
+.activites img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activites .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+/****** Footer *****/
+.footer-help {
+    background-color: gainsboro;
+    border: 0;
+}
 
 
 
