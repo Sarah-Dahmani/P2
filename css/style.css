@@ -4,49 +4,42 @@
 }
 
 li {
-    display: inline-block;
+    display: inline;
 }
 
 #logo {
-    width: 60px;
+    width: 70px;
     height: 20px;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 }
 
 .menu {
-    color: var(--main-color);
+    color: #0065FC;
     display: inline-block;
     width: auto;
     display: flex;
     justify-content: space-around;
 }
 
-.entete {
+.en-tete {
     display : flex;
     flex-direction : row;
     justify-content: space-between;
 }
 
-.nav1 {
+.navigation {
     padding: 30px;
 }
 
-.nav2 {
-    padding: 30px;
-}
-
-.nav1:hover {
-    text-decoration: overline 2px solid ;
-    color: var(--main-color);
-}
-
-.nav2:hover {
-    text-decoration: overline 2px solid var(--main-color);
-    color: var(--main-color);
+.navigation:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
 }
 
 form {
     margin: 10px;
+    position: relative;
+    right: 10px;
 }
 
 input {
@@ -56,19 +49,26 @@ input {
 
 .localisation {
     padding: 15px;
+    margin-right: 0;
     border-width: 0;
     border-radius: 20px 0px 0px 20px;
 }
 
 .ville {
     background-color: white;
-    padding: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-align: center;
     border: 0;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .rechercher-desktop {
-    padding: 15px;
+    padding: 13px;
+    margin-left: 0;
     background-color: #0065FC;
     border-width: 0;
     border-radius: 0px 10px 10px 0px;
@@ -76,6 +76,7 @@ input {
 
 input[type="submit"] {
     color: white;
+    background-color: #0065FC;
 }
 
 .filtres {
@@ -84,19 +85,25 @@ input[type="submit"] {
     border-radius: 20px 20px 20px 20px;
     padding: 20px 10px 10px 0;
     font-weight: bold;
+    text-align: left;
+    position: relative;
+    right: 36px;
 }
 
 .button-filter {
     margin: auto;
     background-color: white;
     padding: 10px;
+    margin-right: 10px;
     border-radius: 20px 20px 20px 20px;
     font-weight: bold;
-    border: 2px solid gainsboro;
+    border: 2px solid #d9d9d9;
+    position: relative;
+    right: 30px;
 }
 
 .button-filter:hover {
-    background-color: lightsteelblue;
+    background-color: #DEEBFF;
 }
 
 :root {
@@ -107,6 +114,13 @@ input[type="submit"] {
 
 .fa-solid {
     color: var(--main-color);
+}
+
+.info {
+    height: 2px;
+    border: 2px solid #d9d9d9;
+    padding: 4px 11px 4px 11px;
+    border-radius: 90px;
 }
 
 body {
@@ -178,14 +192,25 @@ a {
     align-items: center;
 }
 
+.hebergements-cards {
+    width: 95%;
+    height: 136px;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
 .hebergements-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
 .hebergements-cards img {
+    display: flex;
+    justify-content: flex-start;
     width: 33%;
-    height: 136px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -210,6 +235,11 @@ a {
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.more {
+    font-weight: bold;
+    padding: 30px;
 }
 
 /****** Populaires ***********/
@@ -259,13 +289,22 @@ a {
 
 /****** Activités ***********/
 .activites {
-    width: 32%;
+    width: 100%;
 }
 
 .activites-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    padding-bottom: 20px;
 }
 
 .activites .card {
@@ -287,9 +326,31 @@ a {
 }
 
 /****** Footer *****/
-.footer-help {
-    background-color: gainsboro;
+.footer-list {
+    background-color: #F2F2F2;
     border: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-help {
+    background-color: #F2F2F2;
+    border: 0;
+    padding-right: 250px;
+    padding-left: 0;
+    font-size: medium;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+p [class="categorie"] {
+    display: inline-block;
+}
+
+.categorie {
+    font-weight: bold;
 }
 
 
