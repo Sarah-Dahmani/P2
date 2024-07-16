@@ -17,17 +17,15 @@
 <body>
     <div class="main-container">
         <header>
-        <div class ="en-tete">
-                <img src="images/logo/Booki.png" alt="Logo du site" id="logo">
+        <div class="en-tete">
+                <div class="logo-responsive">
+                    <img src="images/logo/Booki.png" alt="Logo du site" id="logo">
+            </div>
             <div class="menu">
             <nav>
                  <ul>
-                    <span class=navigation>
-                        <li><a href="#">Hébergements</a></li>
-                    </span>
-                    <span class=navigation>
-                        <li><a href="#">Activités</a></li>
-                    </span>
+                            <li><a class="navigation-1" href="#">Hébergements</a></li>
+                            <li><a class="navigation-2" href="#">Activités</a></li>
                 </ul>
             </nav>
             </div>
@@ -41,9 +39,9 @@
                  <button class="localisation">    
                     <i class="fa-sharp fa-solid fa-location-dot" style="color: black;"></i>
                 </button>
-                <button class="ville">
+                <span class="ville">
                     <input type="text" name="ville" id="ville" value="Marseille, France">
-                </button>
+                </span>
                 <span class="rechercher-desktop"> 
                     <input type="submit" value="Rechercher"> 
                 </span>
@@ -53,7 +51,7 @@
             </form>
             
             
-                <ul>
+                <ul class="button-filter-responsive">
                     <button class="filtres">
                 <li><a href="#">Filtres</a></li>
                 <button class="button-filter">
@@ -68,7 +66,7 @@
                 <button class="button-filter">
                     <div class="button-filter-logo"><i class="fa-solid fa-fire"></i></div> <li><a href="#">Nos pépites</a></li>   
                 </button>
-            </button>
+                    </button>
                 </ul>
             
                     <p>
@@ -297,33 +295,34 @@
                                         <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                             </article>
                         </a>
+                        </div>
                     </section>
         </main>
         <footer>
             <div class="footer-list">
                 <ul>
-        <button class="footer-help">
+        <div class="footer-help">
             <div class="categorie">
                 <p>À propos</p>
             </div>
             <div class="footer-lien"><li><a href="#">Fonctionnement du site</a></li></div>
             <div class="footer-lien"><li><a href="#">Conditions générales</a></li></div>
             <div class="footer-lien"><li><a href="#">Données de confidentialités</a></li></div>
-        </button>
-        <button class="footer-help">
+        </div>
+        <div class="footer-help">
             <div class="categorie">
                 <p>Hébergements</p>
             </div>
             <div class="footer-lien"><li><a href="#">Charte qualité</a></li></div>
             <div class="footer-lien"><li><a href="#">Proposer votre vol</a></li></div><br>
-        </button>
-        <button class="footer-help">
+        </div>
+        <div class="footer-help">
             <div class="categorie">
                 <p>Assistance</p>
             </div>
             <div class="footer-lien"><li><a href="#">Centre d'aide</a></li></div>
             <div class="footer-lien"><li><a href="#">Nous contacter</a></li></div><br>
-        </button>
+        </div>
         </ul>
     </div>
     </footer>
