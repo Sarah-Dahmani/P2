@@ -4,7 +4,7 @@
 }
 
 li {
-    display: inline;
+    display: inline-block;
 }
 
 #logo {
@@ -113,6 +113,8 @@ input[type="submit"] {
     padding: 20px 10px 30px 0;
     font-weight: bold;
     font-size: medium;
+    position: relative;
+    right: 37px;
 }
 
 .button-filter {
@@ -124,7 +126,8 @@ input[type="submit"] {
     font-weight: bold;
     border: 2px solid #d9d9d9;
     position: relative;
-    left: 20px;
+    left: 80px;
+    bottom: 30px;
     font-size: medium;
 }
 
@@ -382,14 +385,17 @@ a {
 .footer-list {
     background-color: #F2F2F2;
     padding: 20px;
+    
+    
 }
 
 .footer-help {
     padding-right: 250px;
     padding-bottom: 15px;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+   display: inline-flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   
 }
 
 p [class="categorie"] {
@@ -402,6 +408,10 @@ p [class="categorie"] {
 
 .footer-lien {
     padding-bottom: 10px;
+}
+
+br {
+    display : none;
 }
 
 
@@ -605,21 +615,21 @@ p [class="categorie"] {
     }
     
     .filtres {
-        background-color: white;
-        border: 0;
-        border-radius: 20px 20px 20px 20px;
         display: flex;
         flex-wrap: wrap;
         width: 400px;
         margin-top: -20px;
+        position: relative;
+        left: 5px;
     }
     
     .button-filter {
         font-size: small;
-        width: 160px;
+        width: 180px;
         margin-left: 0px;
         margin-bottom: 20px;
-        margin-right: 40px;
+        position: relative;
+        top : 30px;
     }
 
     .button-filter-responsive {
@@ -628,6 +638,10 @@ p [class="categorie"] {
         flex-wrap: wrap;
         position: relative;
         right: 80px;
+    }
+
+    .filter-responsive {
+        margin-left: -73px;
     }
 
     .info-logement {
@@ -694,6 +708,10 @@ p [class="categorie"] {
         display: grid;
         grid-template-columns: 300px;
        
+    }
+
+    .populaires-title {
+        text-align: justify;
     }
 
     .populaires-cards {

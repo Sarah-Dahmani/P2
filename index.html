@@ -17,62 +17,69 @@
 <body>
     <div class="main-container">
         <header>
-        <div class="en-tete">
+            <div class="en-tete">
                 <div class="logo-responsive">
                     <img src="images/logo/Booki.png" alt="Logo du site" id="logo">
-            </div>
-            <div class="menu">
-            <nav>
-                 <ul>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
                             <li><a class="navigation-1" href="#">Hébergements</a></li>
                             <li><a class="navigation-2" href="#">Activités</a></li>
-                </ul>
-            </nav>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
         </header>
-        
+
         <main>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-             <form method="post" action="#">
-                 <button class="localisation">    
+            <form method="post" action="#">
+                <button class="localisation">
                     <i class="fa-sharp fa-solid fa-location-dot" style="color: black;"></i>
                 </button>
                 <span class="ville">
                     <input type="text" name="ville" id="ville" value="Marseille, France">
                 </span>
-                <span class="rechercher-desktop"> 
-                    <input type="submit" value="Rechercher"> 
+                <span class="rechercher-desktop">
+                    <input type="submit" value="Rechercher">
                 </span>
                 <span class="rechercher-mobile">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                 </span>
             </form>
-            
-            
-                <ul class="button-filter-responsive">
-                    <button class="filtres">
-                <li><a href="#">Filtres</a></li>
-                <button class="button-filter">
-                    <div class="button-filter-logo"><i class="fa-solid fa-money-bill-wave"></i></div><li><a href="#">Économique</a></li>
-                </button>
-                <button class="button-filter">
-                    <div class="button-filter-logo"><i class="fa-solid fa-person"></i></div> <li><a href="#">Familial</a></li>
-                </button>
-                <button class="button-filter">
-                    <div class="button-filter-logo"><i class="fa-solid fa-heart"></i></div> <li><a href="#">Romantique</a></li>
-                </button>
-                <button class="button-filter">
-                    <div class="button-filter-logo"><i class="fa-solid fa-fire"></i></div> <li><a href="#">Nos pépites</a></li>   
-                </button>
+
+
+            <ul class="button-filter-responsive">
+                    <div class="filtres">
+                    <li><a href="#">Filtres</a></li>
+                        <div class="filter-responsive">
+                            <button class="button-filter">
+                        <span class="button-filter-logo"><i class="fa-solid fa-money-bill-wave"></i></span>
+                        <a href="#">Économique</a>
                     </button>
-                </ul>
-            
-                    <p>
-                       <span class="info-logo"><i class="fa-solid fa-info fa-xs"></i></span> 
-                       <span class="info-logement">Plus de 500 logements sont disponibles dans cette ville</span>
-                    </p>
+                    <button class="button-filter">
+                        <span class="button-filter-logo"><i class="fa-solid fa-person"></i></span>
+                        <li><a href="#">Familial</a></li>
+                    </button>
+               
+                    <button class="button-filter">
+                        <span class="button-filter-logo"><i class="fa-solid fa-heart"></i></span>
+                        <li><a href="#">Romantique</a></li>
+                    </button>
+                    <button class="button-filter">
+                        <span class="button-filter-logo"><i class="fa-solid fa-fire"></i></span>
+                        <li><a href="#">Nos pépites</a></li>
+                    </button>
+                </div>
+                    </div>
+            </ul>
+
+            <p>
+                <span class="info-logo"><i class="fa-solid fa-info fa-xs"></i></span>
+                <span class="info-logement">Plus de 500 logements sont disponibles dans cette ville</span>
+            </p>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -82,7 +89,8 @@
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
-                                    <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits">
+                                <img src="./images/hebergements/fred-kleber.jpg"
+                                    alt="Image de la chambre d'hôtel montrant deux lits">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -101,7 +109,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant deux lits">
+                                <img src="./images/hebergements/febrian-zakaria.jpg"
+                                    alt="Image de la chambre d'hôtel montrant deux lits">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel chez Amina</h3>
@@ -120,7 +129,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/reisetopia.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -139,7 +149,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/annie-spratt.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -158,7 +169,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit superposé">
+                                <img src="./images/hebergements/marcus-loke.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit superposé">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge La Canebière</h3>
@@ -177,7 +189,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant des lits supersposés">
+                                <img src="./images/hebergements/nicate-lee.jpg"
+                                    alt="Image de la chambre d'hôtel montrant des lits supersposés">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -207,7 +220,8 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/emile-guillemot.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -226,7 +240,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/aw-creative.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -245,7 +260,8 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg"
+                                    alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -265,68 +281,87 @@
                     </div>
                 </section>
             </div>
-            
-                <section class="activites">
-                    <div class="activites-title">
-                        <h2 class="section-title">Activités à Marseille</h2>
-                    </div>
-                    <div class="activites-cards">
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le vieux-port">
-                                        <div class="title-responsive"><h3 class="card-title">Vieux-Port</h3></div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues">
-                                        <div class="title-responsive"><h3 class="card-title">Fort de Pomègues</h3></div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant le Parc National des Calanques">
-                                        <h3 class="card-title">Parc National des Calanques</h3>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde">
-                                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                            </article>
-                        </a>
-                        </div>
-                    </section>
+
+            <section class="activites">
+                <div class="activites-title">
+                    <h2 class="section-title">Activités à Marseille</h2>
+                </div>
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le vieux-port">
+                            <div class="title-responsive">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues">
+                            <div class="title-responsive">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg"
+                                alt="Image montrant le Parc National des Calanques">
+                            <h3 class="card-title">Parc National des Calanques</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer-list">
-                <ul>
-        <div class="footer-help">
-            <div class="categorie">
-                <p>À propos</p>
+                    <ul>
+                            <div class="footer-help">
+                            <div class="categorie">
+                                <p>À propos</p>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Fonctionnement du site</a></li>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Conditions générales</a></li>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Données de confidentialités</a></li>
+                            </div>
+                        </div>
+                            <div class="footer-help">
+                            <div class="categorie">
+                                <p>Hébergements</p>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Charte qualité</a></li>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Proposer votre vol</a></li>
+                            </div><br>
+                        </div>
+                            <div class="footer-help">
+                            <div class="categorie">
+                                <p>Assistance</p>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Centre d'aide</a></li>
+                            </div>
+                            <div class="footer-lien">
+                            <li><a href="#">Nous contacter</a></li>
+                            </div><br>
+                        </div>
+                    </ul>
             </div>
-            <div class="footer-lien"><li><a href="#">Fonctionnement du site</a></li></div>
-            <div class="footer-lien"><li><a href="#">Conditions générales</a></li></div>
-            <div class="footer-lien"><li><a href="#">Données de confidentialités</a></li></div>
+        </footer>
         </div>
-        <div class="footer-help">
-            <div class="categorie">
-                <p>Hébergements</p>
-            </div>
-            <div class="footer-lien"><li><a href="#">Charte qualité</a></li></div>
-            <div class="footer-lien"><li><a href="#">Proposer votre vol</a></li></div><br>
-        </div>
-        <div class="footer-help">
-            <div class="categorie">
-                <p>Assistance</p>
-            </div>
-            <div class="footer-lien"><li><a href="#">Centre d'aide</a></li></div>
-            <div class="footer-lien"><li><a href="#">Nous contacter</a></li></div><br>
-        </div>
-        </ul>
-    </div>
-    </footer>
-    </div>
 </body>
 
 </html>
